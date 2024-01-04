@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e7cccc;
+}
+
+.main {
+    background-color: #e7cccc;
+    padding: 1em;
+    padding-bottom: 1.1em;
+    border-radius: 5px;
+    margin: 1em;
+    transition: .3s all;
+}
+
+.main:hover {
+    background-color: #fff;
+    box-shadow: 0 0 30px #33c477;
+    border: 1px solid brown;
+
+}
+
+.Curren_playing {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 1em;
+
+}
+
+
+.loader {
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    padding: 0 1em;
+    transform: rotate(180deg);
+    justify-content: right;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+
+}
+
+.loader:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.spotify {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.6em;
+
+}
+
+.spotify img {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    align-self: center;
+}
+
+.loading {
+    display: flex;
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+.load:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.load:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.load:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.play {
+    position: relative;
+    left: 0.35em;
+    height: 1.6em;
+    width: 1.6em;
+    background-color: black;
+    clip-path: polygon(50% 50%, 100% 50%, 75% 6.6%);
+    transform: rotate(-90deg);
+    align-self: center;
+    margin-top: 0.7em;
+}
+
+.album_cover {
+    position: relative;
+    margin-right: 1em;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(233, 233, 233);
+    align-self: center;
+    border-radius: 5px;
+}
+
+.song {
+    position: relative;
+    transform: rotate(180deg);
+    margin-right: 1em;
+    align-self: center;
+    color: #000;
+}
+
+.artist {
+    font-size: .6em;
+}
+
+.load {
+    width: 2px;
+    height: 33px;
+    background-color: limegreen;
+    animation: 1s move6 infinite;
+    border-radius: 5px;
+    margin: 0.1em;
+}
+
+@keyframes move6 {
+    0% {
+        height: 0.2em;
+    }
+
+    25% {
+        height: 0.5em;
+    }
+
+    50% {
+        height: 1.5em;
+    }
+
+    100% {
+        height: 0.2em;
+    }
+}
